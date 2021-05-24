@@ -1,0 +1,474 @@
+body {
+  color: rgba(26, 26, 26, .7);
+  font-family: 'Syne Mono', monospace;
+  font-size: 16px;
+  margin: 0;
+}
+header{
+background-image: url(pattini.jpg);
+background-size: cover;
+background-position: center;
+height: 100vh;
+color:white;
+display:flex ;
+align-items:center;
+justify-content:center;
+flex-direction: column;
+}
+header nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+display:flex ;
+align-items: center ;
+justify-content: space-between ;
+padding: 0.50%;
+background-color:rgb(18, 42, 61);
+z-index: 2;
+height: 10vh;
+}
+header::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 100vh;
+}
+
+#logo img{
+  
+  height: 100%;
+  width: auto;
+}
+#logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    font-size: 180%;
+    font-family: 'Rock Salt', cursive;
+    height: 100%;
+    
+}
+#comandi{
+  font-size: 20px;
+  margin:20px;
+  letter-spacing: 1px;
+  
+}
+#comandi a{
+  margin:25px;
+}
+#comandi a:link{
+  text-decoration: none; color: white;
+}
+#comandi a:visited{
+  text-decoration: none; color:white;
+}
+#comandi a:hover{                               
+  color: steelblue; 
+  border-bottom: 3px solid steelblue;
+
+
+
+}
+#menu{
+    display: none;
+}
+#menu div{
+ position: relative;
+ background-color: white;
+ width: 25px;
+ height: 3px;
+ margin:5px 0;
+}
+
+#intro{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+z-index:1;
+position:relative;
+padding: 0 350px ;
+margin-top: 90px;
+height: 100%;
+width: auto;
+
+}
+#intro h1{
+  font-size: 50px;
+
+}
+#intro p{
+  font-size: 25px;
+  text-align: center;
+}
+#sezioneprincipale{
+  background-color:rgb(63, 80, 94);
+    padding: 0.5%; 
+    color: white;
+}
+#sezioneprincipale h1{
+  text-align: center;
+}
+#dett div{
+ padding: 5%;
+}
+#dett{
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+  text-align:left;
+   
+}
+#testoP p{
+   font-size: 20px;
+   font-family: 'New Tegomin', serif;
+}
+
+#sezionesecondaria img{
+  width: 100%;
+  height: auto;
+
+}
+#dettagli div{
+  flex:40%;
+  flex-grow: 1;
+  padding: 20px;
+}
+#dettagli{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 90%;
+  margin: auto;
+  
+}
+#dettagli h1{
+  text-align: center;
+}
+#dettagli p{
+  text-align: center;
+  font-size: 15px;
+}
+#imm1 img{
+width: 640px;
+height: auto;
+margin-top: 40px;
+}
+#imm2 img {
+ width: 605px;
+ height: auto;
+ padding-bottom: 20px;
+
+}
+footer{
+  font-family: 'Josefin Slab', serif;
+  background-color:rgb(18, 42, 61) ;
+  color: white;
+  padding: 80px;
+  text-align: center;
+}
+
+footer img{
+  width: 3%;
+  height: auto;
+}
+
+/*parte dispositivi mobili*/
+@media(max-width:800px){
+
+#comandi{
+display: none;
+}
+#menu{
+display: block;
+padding-right: 10px;
+
+}
+header{
+height: 45vh;
+
+}
+header::before{
+height: 45vh;
+}
+#intro h1 {
+
+font-size: 20px;
+}
+#intro p{
+font-size: 10px;
+
+}
+#intro{
+
+margin: 0;
+padding: 15px ;
+font-size:53% ;
+margin-top: 40px;
+
+}
+
+#dett{
+flex-direction: column;
+}
+#dettagli{
+flex-direction: column;
+}
+#sezioneprincipale h1{
+font-size: 20px;
+}
+#testoP p {
+font-size: 75%;
+}
+#dett div img{
+width: 100%;
+height: auto;
+}
+#imm1 img{
+width: 100%;
+height: auto;
+}
+#imm2 img{
+width: 100%;
+height: auto;
+
+}
+#pattinatrice img{
+width: 7%;
+height: auto;
+padding-left: 5px;
+
+}
+#logo{
+font-size: 60%;
+margin-right: 250px;
+}
+footer img{
+width: 5%;
+height: auto;
+
+}
+footer h3{
+font-size: 65%;
+}
+}
+.seconda{
+  background-image: none;
+  height: 10vh;
+
+
+}
+.seconda::before{
+  background-color:transparent;
+  height: 10vh;
+}
+
+
+#barra{
+  display: flex;
+  justify-content: center;
+
+ 
+
+}
+input{
+ border: 3px solid rgb(18, 42, 61);
+ padding: 10px 30px;
+ border-radius: 100px;
+
+
+}
+input:focus{
+ outline:none;
+
+}
+button{
+  color: whitesmoke;
+  padding: 2px 4px;
+  border: 1px solid whitesmoke;
+  background-color:rgb(18, 42, 61);
+  border-radius: 100px;
+}
+button:focus{
+  outline:none;
+}
+.pattini{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+.pattini div{
+display:flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+width: 30%;
+height: auto;
+margin-top: 35px;
+padding: 1%;
+}
+.pattini div img{
+  width: 150px;
+  height: auto;
+}
+.pattini div a img{
+  width: 45px;
+  height: auto;
+}
+.pattini div p{
+  font-size: 25px;
+}
+.hidden{
+  display: none;
+}
+.e{
+  display: flex;
+  height: 100px;
+  width: auto;
+}
+.persone{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+
+}
+.name h1{
+  font-size: 20px;
+} 
+.name{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2%;
+  width: 15%;
+}
+.persona{
+  border-radius: 30px;
+
+}
+.corsi{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+} 
+.allenamento{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  height: auto;
+}
+.allenamento img{
+  width: 70%;
+  height: auto;
+}
+.allenamento ul{
+  font-size: 1.2em;
+}
+/*CSS MHW5*/
+
+.quinta{
+  background-image: none;
+  height: 15vh;
+}
+.quinta::before{
+  background-color: rgba(0, 0, 0, 0.0);
+}
+#intro5 h1{
+  font-size: 30px;
+  text-align: center;
+}
+#intro5 p{
+  font-size: 20px;
+  text-align: center;
+
+}
+
+.sezprincipaleM5 h1{
+  text-align: center;
+ 
+}
+.sezprincipaleM5 p{
+  text-align: center;
+  font-size: 20px;
+}
+
+
+
+#text1 h1 {
+  text-align: center;
+
+}
+#text1 p{
+  text-align: center;
+  font-size: 20px;
+}
+
+
+/*PARTE LOGIN/SIGNUP*/
+#login{
+  text-align: center;
+  font-size: 20px;
+margin-top: 50px;
+}
+.login{
+  z-index: 1;
+}
+.main_right{
+  
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+
+}
+.main_right h1{
+  text-align: center;
+  font-size: 20px;
+}
+.password{
+  text-align: center;
+  font-size: 20px;
+}
+.remember{
+  text-align: center;
+  font-size: 20px;
+}
+.registrazione{
+  z-index: 1;
+}
+.signup{
+  text-align: center;
+  font-size: 20px;
+}
+.main_right2{
+
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#signup{
+
+  text-align: center;
+  font-size: 15px;
+  margin: 5%;
+}
